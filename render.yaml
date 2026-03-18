@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: main-project
+    env: static
+    buildCommand: npm install && npm run build
+    staticPublishPath: ./dist
+    fallbackDocument: index.html
